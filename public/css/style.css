@@ -1499,6 +1499,15 @@ img {
   }
 }
 
+.scene {
+  position: relative;
+}
+
+.scene .remark {
+  right: 10px;
+  bottom: 10px;
+}
+
 .practical {
   color: #604C3F;
 }

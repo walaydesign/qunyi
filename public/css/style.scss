@@ -1338,6 +1338,14 @@ img {
     }
 }
 
+.scene {
+    position: relative;
+    .remark {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
 .practical {
     color: $secondary;
     &_top {
