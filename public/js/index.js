@@ -1,3 +1,6 @@
+AOS.init({startEvent: 'load'});
+window.addEventListener('load', AOS.refresh);
+
 var swiper = new Swiper(".slider_swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
