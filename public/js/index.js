@@ -1,7 +1,7 @@
 AOS.init({startEvent: 'load'});
 window.addEventListener('load', AOS.refresh);
 
-var swiper = new Swiper(".slider_swiper", {
+var swiperSlider = new Swiper(".slider_swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
@@ -11,7 +11,17 @@ var swiper = new Swiper(".slider_swiper", {
     speed: 1000,
 })
 
-var swiper = new Swiper(".plan_swiper", {
+var swiperValue = new Swiper(".value_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    speed: 1000,
+})
+
+var swiperPlan = new Swiper(".plan_swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {

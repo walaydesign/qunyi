@@ -1045,12 +1045,6 @@ img {
   margin-bottom: 100px;
 }
 
-.value_pic {
-  position: relative;
-  max-width: 1300px;
-  margin-bottom: 140px;
-}
-
 .value_pic .remark {
   right: 15px;
   bottom: 10px;
@@ -1070,6 +1064,51 @@ img {
 .value h5 {
   font-size: 75px;
   margin: 0;
+}
+
+.value_swiper {
+  position: relative;
+  max-width: 1300px;
+  margin-bottom: 140px;
+}
+
+.value_swiper .swiper-button-prev, .value_swiper .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.value_swiper .swiper-button-prev svg, .value_swiper .swiper-button-next svg {
+  width: 19px;
+  height: 32px;
+}
+
+.value_swiper .swiper-button-prev svg polygon, .value_swiper .swiper-button-next svg polygon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.value_swiper .swiper-button-prev::after, .value_swiper .swiper-button-next::after {
+  display: none;
+}
+
+.value_swiper .swiper-button-prev:hover, .value_swiper .swiper-button-next:hover {
+  background-color: #604C3F;
+}
+
+.value_swiper .swiper-button-prev:hover svg polygon, .value_swiper .swiper-button-next:hover svg polygon {
+  fill: #fff;
+}
+
+.value_swiper .swiper-button-prev {
+  left: 40px;
+}
+
+.value_swiper .swiper-button-next {
+  right: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1110,6 +1149,20 @@ img {
   }
   .value h5 {
     font-size: 14px;
+  }
+  .value .swiper-button-prev, .value .swiper-button-next {
+    width: 14px;
+    height: 14px;
+  }
+  .value .swiper-button-prev svg, .value .swiper-button-next svg {
+    width: 5px;
+    height: 9px;
+  }
+  .value .swiper-button-prev {
+    left: 15px;
+  }
+  .value .swiper-button-next {
+    right: 15px;
   }
 }
 
