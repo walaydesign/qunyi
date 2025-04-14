@@ -1546,15 +1546,11 @@ img {
         &_bottom {
             background-image: url(../img/bg-pattern.webp);
             background-size: 100%;
-            padding-top: calc(77.78% * 0.56);
+            padding-top: calc(77.78% * 0.3);
         }
         &_smallpics {
-            width: calc(100% - (100vw - 1300px) / 2);
-            margin-left: auto;
-            display: flex;
-            align-items: center;
-            padding-top: 56px;
-            padding-bottom: 56px;
+            width: 100%;
+            padding: 40px 20px;
             .practical_text {
                 width: 40%;
             }
@@ -1568,110 +1564,43 @@ img {
                 position: relative;
                 width: calc(50% - 13px);
                 padding-bottom: calc((50% - 13px) * 0.61);
-                >img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    top: 0;
-                    left: 0;
-                }
-                .remark {
-                    font-size: 9px;
-                    right: 10px;
-                    bottom: 5px;
-                }
+                width: 100%;
+                padding-bottom: 61%;
             }
         }
         &_text {
             color: $secondary;
             h5 {
-                font-size: 40px;
-                margin-bottom: 20px;
-                font-weight: 700;
-                width: fit-content;
+                font-size: 11px;
+                margin-bottom: 5px;
             }
             .text {
-                color: $secondary;
-                font-size: 20px;  
-                margin: 0;          
+                font-size: 6px;      
             }
             &_inner {
+                padding-right: 13px;
                 &.text {
                     &-lobby {
-                        width: 380px;
+                        width: auto;
                     }
                 }
             }
         }
         &_saloon {
-            display: flex;
-            align-items: center;
-            &_pic {
-                width: 57%;
-                position: relative;
-                padding-bottom: calc(56% * 0.5625);
-                >img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    top: 0;
-                    left: 0;
-                }
-                .remark {
-                    right: 10px;
-                    bottom: 6px;
-                }
-                .practical_picname {
-                    top: 5.9%;
-                    right: 4.45%;
-                }
-            }
+            margin-bottom: 20px;
             &_text {
-                width: 43%;
                 .practical_text_inner {
-                    width: 380px;
-                    margin: 0 auto;
+                    width: auto;
+                    padding-left: 20px;
                 }
             }
         }
         &_gym {
-            display: flex;
-            align-items: center;
-            max-width: 1730px;
-            padding-left: 40px;
-            padding-right: 40px;
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 120px;
+            padding-bottom: 25px;
             &_text {
                 width: 50%;
                 .practical_text_inner {
-                    width: fit-content;
-                    margin-left: auto;
-                    padding-right: 100px;
-                }
-            }
-            &_pic {
-                width: 50%;
-                position: relative;
-                padding-bottom: calc(50% * 0.5625);
-                >img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    top: 0;
-                    left: 0;
-                }
-                .remark {
-                    right: 10px;
-                    bottom: 6px;
-                }
-                .practical_picname {
-                    bottom: 7.61%;
-                    left: 9.72%;
+                    padding-right: 30px;
                 }
             }
         }
@@ -1690,6 +1619,18 @@ img {
     .text {
         color: $secondary;
         margin-bottom: 80px;
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 40px;
+        .title-en {
+            margin-bottom: 20px;
+        }
+        .title-ch {
+            margin-bottom: 20px;
+        }
+        .text {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -1770,6 +1711,16 @@ img {
             }
         }
     }
+    @media screen and (max-width: 991px) {
+        &_intro {
+            p {
+                font-size: 5px;
+                &::before, &::after {
+                    height: 5px;
+                }
+            }
+        }
+    }
 }
 
 .bright {
@@ -1791,6 +1742,18 @@ img {
         color: $secondary;
         margin: 0;
     }
+    @media screen and (max-width: 991px) {
+        padding-bottom: 45px;
+        .factory {
+            margin-bottom: 35px;
+        }
+        .title-ch {
+            margin-bottom: 13px;
+        }
+        .title-en {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .plan {
@@ -1807,9 +1770,10 @@ img {
     }
     &_map {
         position: relative;
+        width: fit-content;
+        margin: 0 auto 50px;
         &_main {
             width: 310px;
-            margin: 0 auto 50px;
         }
         &_compass {
             position: absolute;
@@ -1886,6 +1850,55 @@ img {
         font-size: 11px;
         margin: 0;
         font-family: $font-noto-sans-TC;
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 35px;
+        padding-bottom: 15px;
+        h2 {
+            font-size: 11px;
+            margin-bottom: 15px;
+        }
+        &_map {
+            margin: 0 auto 20px;
+            &_main {
+                width: 126px;
+                margin: 0;
+            }
+            &_compass {
+                width: 31px;
+                left: calc(100% + 25px);
+            }
+        }
+        &_item {
+            margin: 0 auto;
+            padding: 0 40px;
+            h3 {
+                font-size: 18px;
+            }
+        }
+        .swiper-button {
+            &-prev, &-next {
+                width: 14px;
+                height: 14px;
+                svg {
+                    width: 5px;
+                    height: 9px;
+                }
+            }
+            &-prev {
+                left: 15px;
+            }
+            &-next {
+                right: 15px;
+            }
+        }
+        &_swiper {
+            margin-bottom: 50px;
+        }
+        &_remark {
+            padding: 0 15px;
+            font-size: 6px;
+        }
     }
 }
 
@@ -2005,5 +2018,79 @@ img {
             background-color: $secondary;
             // margin: 0;
         }
+    }
+    @media screen and (max-width: 991px) {
+        padding-top: 70px;
+        padding-bottom: 100px;
+        &_logo {
+            width: 70px;
+            margin: 0 auto 25px;
+        }
+        &_slogan {
+            width: 175px;
+            margin: 0 auto 40px;
+        }
+        &_info {
+            margin-bottom: 70px;
+            ul {
+                margin-bottom: 5px;
+                li {
+                    font-size: 13px;
+                    padding: 0 4px;
+                    &::after {
+                        width: 1px;
+                        height: 12px;
+                    }
+                }
+            }
+            h3 {
+                font-size: 12px;
+            }
+        }
+        &_form {
+            h2 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            input {
+                height: 30px;
+                padding: 0 5px;
+                font-size: 11px;
+                margin-bottom: 15px;
+            }
+            &_btn {
+                margin-top: 30px;
+                button {
+                    padding: 7px 24px;
+                    border: 1px solid $secondary;
+                    color: $secondary;
+                    font-size: 11px;
+                    margin: 0 7px;
+                }
+            }
+        }
+        &_text {
+            margin-top: 28px;
+            font-size: 6px;
+            margin: 0 auto 5px;
+            padding-left: 10px;
+            &::before {
+                width: 5px;
+                height: 5px;
+                top: 2px;
+            }
+        }
+        h4 {
+            font-size: 8px;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 25px;
+            .line {
+                width: 20px;
+                height: 1px;
+                display: inline-block;
+            }
+        }
+        
     }
 }
