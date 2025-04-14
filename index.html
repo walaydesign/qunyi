@@ -28,8 +28,10 @@
     </header>
 
     <main class="main">
-        <div class="container">
-            <div class="video"></div>
+        <div class="container video-wrap">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LZuhvNT_6E8?si=KoWgwodID7gCRfax" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
 
         <div class="brand">
@@ -47,18 +49,20 @@
         <div class="forest">
             <div class="forest_text">
                 <div class="container d-flex align-items-start justify-content-between">
-                    <h2>
+                    <!-- <h2>
                         <span>眼光卓越</span>
                         <span>超越象限</span>
                         <span>群邑建築</span>
                         <span>植禾成林</span>
-                    </h2>
-                    <img src="./public/img/arrow-right.svg" alt="">
-                    <h3>
+                    </h2> -->
+                    <img class="forest_ch" src="./public/img/forest-ch.svg" alt="">
+                    <img class="forest_arrow" src="./public/img/arrow-right.svg" alt="">
+                    <img class="forest_en" src="./public/img/forest-en.svg" alt="">
+                    <!-- <h3>
                         <span>BROAD</span>
                         <span>VIEW OF</span>
                         <span>THE CITY</span>
-                    </h3>
+                    </h3> -->
                 </div>
             </div>
             <div class="forest_pic">
@@ -78,23 +82,20 @@
 
         <div class="profession">
             <div class="container">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex-wrap">
                     <div class="profession_title">
                         <div class="profession_title_pic">
                             <img class="profession_arrow" src="./public/img/arrow-top.svg" alt="">
                             <img class="profession_sketch" src="./public/img/sketch.webp" alt="">
                         </div>
-                        <h2>
+                        <img class="profession_en" src="./public/img/profession-en.svg" alt="">
+                        <!-- <h2>
                             <span>BETTER</span>
                             <span>THAN</span>
                             <span>PERFECT</span>
-                        </h2>
+                        </h2> -->
                     </div>
-                    <h3>
-                        <span><span class="num">3</span>箭<span class="num">4</span>心</span>
-                        <span>植樹再進化</span>
-                        <span>職人匠新精神</span>
-                    </h3>
+                    <img class="profession_ch" src="./public/img/profession-ch.svg" alt="">
                     <div class="profession_text">
                         <p class="text">
                             公司經營主理人<br>
@@ -170,7 +171,8 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="case_inner case-left">
-                                <h2>CLASSIC<br>CASE</h2>  
+                                <img class="case_en" src="./public/img/history-en.svg" alt="">
+                                <!-- <h2>CLASSIC<br>CASE</h2>   -->
                                 <div class="case_item">
                                     <h3>2021</h3>
                                     <div class="case_content">
@@ -210,11 +212,12 @@
                         <div class="col-6">
                             <div class="case_inner case-right">
                                 <div class="case_intro">
-                                    <div class="case_intro_text">
+                                    <img class="case_ch" src="./public/img/history-ch.svg" alt="">
+                                    <!-- <div class="case_intro_text">
                                         <p class="hasline">經典業績 種樹成林</p>
                                         <h3>承先啟後<br>城市植青</h3>
                                         <p class="movedown">生活語彙 實績各表</p>
-                                    </div>
+                                    </div> -->
                                     <img class="case_intro_arrow" src="./public/img/arrow-right-blue.svg" alt="">
                                 </div>
                                 <div class="case_item">
@@ -552,7 +555,7 @@
 
         </div>
 
-        <div class="selection">
+        <div class="selection d-none">
             <h3 class="title-en">PREMIUN SELECTION</h3>
             <h2 class="title-ch">璟玉選品 質感體驗</h2>
             <p class="text">
@@ -593,7 +596,7 @@
             </div>
         </div>
 
-        <div class="bright">
+        <div class="bright d-none">
             <div class="factory">
                 <div class="row">
                     <div class="col-4">
@@ -638,7 +641,7 @@
 
         </div>
 
-        <div class="plan">
+        <div class="plan d-none">
             <h2>SITE PLAN</h2>
             <div class="plan_map">
                 <img class="plan_map_main" src="./public/img/floor-map.svg" alt="">
@@ -676,7 +679,7 @@
             <p class="plan_remark">本圖僅供現場人員解說使用，實際規劃已竣工圖為主，建設公司保有修改之權益。</p>
         </div>
 
-        <div class="contact">
+        <div class="contact d-none">
             <img class="contact_logo" src="./public/img/logo-brown-2.webp" alt="">
             <img class="contact_slogan" src="./public/img/japanese.svg" alt="">
             <div class="contact_info">
