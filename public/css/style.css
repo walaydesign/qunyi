@@ -2190,8 +2190,17 @@ img {
 }
 
 .contact_logo {
-  width: 320px;
   margin: 0 auto 55px;
+}
+
+.contact_logo_pic {
+  width: 230px;
+  margin: 0 auto 50px;
+}
+
+.contact_logo_text {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .contact_slogan {
@@ -2352,6 +2361,9 @@ img {
   .contact_logo {
     width: 70px;
     margin: 0 auto 25px;
+  }
+  .contact_logo_pic {
+    margin-bottom: 5px;
   }
   .contact_slogan {
     width: 175px;

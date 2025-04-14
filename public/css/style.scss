@@ -1918,8 +1918,15 @@ img {
     color: $secondary;
     padding-bottom: 220px;
     &_logo {
-        width: 320px;
         margin: 0 auto 55px;
+        &_pic {
+            width: 230px;
+            margin: 0 auto 50px;
+        }
+        &_text {
+            width: 320px;
+            margin: 0 auto;
+        }
     }
     &_slogan {
         width: 375px;
@@ -2034,6 +2041,9 @@ img {
         &_logo {
             width: 70px;
             margin: 0 auto 25px;
+            &_pic {
+                margin-bottom: 5px;
+            }
         }
         &_slogan {
             width: 175px;
