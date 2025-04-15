@@ -34,3 +34,9 @@ var swiperPlan = new Swiper(".plan_swiper", {
     },
     speed: 1000,
 })
+
+$(".header_item").click(function(){
+    let target = $(this).data("target");
+    var top = $(target).offset().top - 70;
+    $("html, body").animate({ scrollTop: top }, parseInt(300));
+})
