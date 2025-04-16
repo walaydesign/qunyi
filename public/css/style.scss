@@ -95,9 +95,16 @@ img {
 .header {
     position: relative;
     z-index: 0;
+    transition: $transition;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
     .container {
         padding-top: 60px;
         padding-bottom: 60px;
+        transition: $transition;
     }
     &_logo {
         width: 250px;
@@ -131,6 +138,13 @@ img {
             font-weight: 500;
             padding: 0;
             font-size: 24px;
+        }
+    }
+    &.scrolldown {
+        background-color: $primary;
+        .container {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
     @media screen and (max-width: 991px) {
@@ -901,6 +915,17 @@ img {
         margin-bottom: 100px;
     }
     &_pic {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        >img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
         .remark {
             right: 15px;
             bottom: 10px;

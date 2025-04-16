@@ -9,6 +9,10 @@ var swiperSlider = new Swiper(".slider_swiper", {
         prevEl: ".swiper-button-prev",
     },
     speed: 1000,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
 })
 
 var swiperValue = new Swiper(".value_swiper", {
@@ -37,6 +41,14 @@ var swiperPlan = new Swiper(".plan_swiper", {
 
 $(".header_item").click(function(){
     let target = $(this).data("target");
-    var top = $(target).offset().top - 70;
+    var top = $(target).offset().top - 99;
     $("html, body").animate({ scrollTop: top }, parseInt(300));
+})
+
+$(window).on("resize scroll",function(){
+    if($(window).scrollTop()>0){
+        $(".header").addClass("scrolldown");
+    }else {
+        $(".header").removeClass("scrolldown");
+    }
 })

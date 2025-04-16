@@ -102,11 +102,20 @@ img {
 .header {
   position: relative;
   z-index: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .header .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header_logo {
@@ -147,6 +156,15 @@ img {
   font-weight: 500;
   padding: 0;
   font-size: 24px;
+}
+
+.header.scrolldown {
+  background-color: #7092C5;
+}
+
+.header.scrolldown .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1043,6 +1061,22 @@ img {
 
 .value h4 {
   margin-bottom: 100px;
+}
+
+.value_pic {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.value_pic > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .value_pic .remark {
