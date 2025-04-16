@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/aos/aos.css">
-    <link rel="stylesheet" href="./public/css/style.css?v=1">
+    <link rel="stylesheet" href="./public/css/style.css?v=2">
 </head>
 <body>
     <header class="header">
@@ -30,7 +30,7 @@
     <main class="main">
         <div class="container video-wrap">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LZuhvNT_6E8?si=KoWgwodID7gCRfax&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LZuhvNT_6E8?si=KoWgwodID7gCRfax&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -648,7 +648,21 @@
         <div class="plan">
             <h2>SITE PLAN</h2>
             <div class="plan_map">
-                <img class="plan_map_main" src="./public/img/floor-map.svg" alt="">
+                <div class="plan_map_main">
+                    <div class="swiper-container plan_map_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="plan_map_img" src="./public/img/floor-map-1.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="plan_map_img" src="./public/img/floor-map-2.svg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="plan_map_img" src="./public/img/floor-map-3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <img class="plan_map_compass" src="./public/img/compass.svg" alt="">
             </div>
             <div class="swiper-container plan_swiper">
@@ -656,26 +670,26 @@
                     <div class="swiper-slide">
                         <div class="plan_item">
                             <h3>A1·A6</h3>
-                            <img src="./public/img/floor.webp" alt="">
+                            <img src="./public/img/floor-1.webp" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="plan_item">
-                            <h3>A1·A6</h3>
-                            <img src="./public/img/floor.webp" alt="">
+                            <h3>A3</h3>
+                            <img src="./public/img/floor-2.webp" alt="">
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="plan_item">
-                            <h3>A1·A6</h3>
-                            <img src="./public/img/floor.webp" alt="">
+                            <h3>A2·A5</h3>
+                            <img src="./public/img/floor-3.webp" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next plan_map-next">
                     <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.98 32.28"><defs><style>.cls-1{fill:#4c3a38;}</style></defs><g id="_圖層_1-2"><polygon class="cls-1" points="2.28 32.28 1.81 31.81 17.99 15.62 0 .51 .43 0 18.98 15.58 2.28 32.28"/></g></svg>
                 </div>
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev plan_map-prev">
                     <svg id="_圖層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.98 32.28"><defs><style>.cls-1{fill:#4c3a38;}</style></defs><g id="_圖層_1-2"><polygon class="cls-1" points="16.7 32.28 0 15.58 18.55 0 18.98 .51 .98 15.62 17.17 31.81 16.7 32.28"/></g></svg>
                 </div>
             </div>
@@ -683,7 +697,7 @@
             <p class="plan_remark">本圖僅供現場人員解說使用，實際規劃已竣工圖為主，建設公司保有修改之權益。</p>
         </div>
 
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="contact_logo">
                 <img class="contact_logo_pic" src="./public/img/logo-2.png" alt="">
                 <img class="contact_logo_text" src="./public/img/logo-brown.svg" alt="">
@@ -722,10 +736,39 @@
 
     </main>
 
+    <div class="sideBtn">
+        <ul class="d-xl-block d-flex">
+            <li>
+                <a href="tel:03-3125858" target="_blank">
+                    <img src="./public/img/phone.svg">
+                    <span>立即來電</span>
+                </a>
+            </li>
+            <li>
+                <a href=" https://facebook.com/CYJingHer" target="_blank">
+                    <img src="./public/img/fb.svg" alt="">
+                    <span>FB粉專</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://maps.app.goo.gl/WseqvA3N61jWA1QS7" target="_blank">
+                    <img src="./public/img/place.svg" alt="">
+                    <span>地圖導航</span>
+                </a>
+            </li>
+            <li>
+                <a class="btn-contact">
+                    <img src="./public/img/reserve.svg" alt="">
+                    <span>立即預約</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
-    <script src="./public/js/index.js?v=1"></script>
+    <script src="./public/js/index.js?v=3"></script>
 </body>
 </html>

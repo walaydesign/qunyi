@@ -29,8 +29,22 @@ var swiperPlan = new Swiper(".plan_swiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".plan_map-next",
+        prevEl: ".plan_map-prev",
+    },
+    pagination: {
+        el: ".plan_pagination",
+        clickable: true,
+    },
+    speed: 1000,
+})
+
+var swiperPlanMap = new Swiper(".plan_map_swiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+        nextEl: ".plan_map-next",
+        prevEl: ".plan_map-prev",
     },
     pagination: {
         el: ".plan_pagination",
@@ -42,6 +56,11 @@ var swiperPlan = new Swiper(".plan_swiper", {
 $(".header_item").click(function(){
     let target = $(this).data("target");
     var top = $(target).offset().top - 99;
+    $("html, body").animate({ scrollTop: top }, parseInt(300));
+})
+
+$(".btn-contact").click(function(){
+    var top = $("#contact").offset().top - 99;
     $("html, body").animate({ scrollTop: top }, parseInt(300));
 })
 
