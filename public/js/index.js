@@ -61,3 +61,23 @@ $(window).on("resize scroll",function(){
         $(".header").removeClass("scrolldown");
     }
 })
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
+        // To : "dition1118@gmail.com, zhulixdesign@gmail.com, zhuliservice@gmail.com",
+        To : "yl301114@gmail.com",
+        From : "walayydesign@gmail.com",
+        Subject : "群邑璟美預約賞屋",
+        Body : "姓名:" + document.getElementById("name").value
+                + "<br>性別:" + document.getElementById("gender").value
+                + "<br>手機:" + document.getElementById("phone").value
+                + "<br>方便聯絡時間:" + document.getElementById("time").value
+    }).then(
+        message => alert("感謝您的來信！我們很快就會和您聯繫！"),
+    );
+}
+
+$(".btn-clear").click(function() {
+    $(this).parents(".contact_form").find("input").val("");
+})

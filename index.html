@@ -751,13 +751,13 @@
                 </ul>
                 <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">基地：八德 建德路廣興三路口</h3>
             </div>
-            <form action="" class="contact_form">
+            <form class="contact_form" onsubmit="sendEmail(); reset(); return false">
                 <h2>與我們聯繫</h2>
                 <div>
-                    <input type="text" placeholder="姓名">
-                    <input type="text" placeholder="性別">
-                    <input type="number" placeholder="手機">
-                    <input type="text" placeholder="方便聯絡時間">
+                    <input type="text" placeholder="姓名" id="name" required>
+                    <input type="text" placeholder="性別" id="gender" required>
+                    <input type="number" placeholder="手機" id="phone" required>
+                    <input type="text" placeholder="方便聯絡時間" id="time" required>
                 </div>
                 <p class="contact_text">
                     請填寫這份表單，我們的代表將盡快透過電子郵件/電話與您聯繫！
@@ -766,8 +766,8 @@
                     WE WILL SERVE YOU WHOKEI <span class="line"></span> HEARTEDLY
                 </h4>
                 <div class="contact_form_btn">
-                    <button>送出</button>
-                    <button>清除</button>
+                    <button class="btn-clear">清除</button>
+                    <button id="submit" type="submit">送出</button>
                 </div>
 
             </form>
@@ -808,6 +808,7 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js?v=20240527"></script>
     <script src="./public/js/index.js?v=3"></script>
 </body>
 </html>
