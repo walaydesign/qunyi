@@ -25,20 +25,6 @@ var swiperValue = new Swiper(".value_swiper", {
     speed: 1000,
 })
 
-// var swiperPlanMap = new Swiper(".plan_map_swiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 0,
-//     navigation: {
-//         nextEl: ".plan_map-next",
-//         prevEl: ".plan_map-prev",
-//     },
-//     pagination: {
-//         el: ".plan_pagination",
-//         clickable: true,
-//     },
-//     speed: 1000,
-//     simulateTouch:false,
-// })
 
 var swiperPlan = new Swiper(".plan_swiper", {
     slidesPerView: 1,
@@ -53,12 +39,6 @@ var swiperPlan = new Swiper(".plan_swiper", {
     },
     speed: 1000,
     simulateTouch:false,
-    // on: {
-    //     slideChange: function() {
-    //         let index = $(".plan_swiper").find(".swiper-slide-active").index() + 1;
-    //         swiperPlanMap.slideTo(index, 1000, true);
-    //     }
-    // },
 })
 
 

@@ -212,13 +212,102 @@ img {
   }
 }
 
-.main {
-  padding-top: 150px;
+.bg-green {
+  background-image: url(../img/bg-green.webp);
+  background-size: 100%;
+}
+
+.kv {
+  padding: 55px 0 0;
+}
+
+.kv_smalllogo {
+  width: 200px;
+  margin-bottom: 11vw;
+}
+
+.kv_biglogo {
+  width: 530px;
+  margin: 0 auto 100px;
+}
+
+.kv h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.kv h1 span {
+  color: #604C3F;
+}
+
+.kv_title-top {
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 0.04em;
+}
+
+.kv_title-bottom {
+  font-size: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0em;
+}
+
+.kv_title-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #604C3F;
+  margin: 0 13px;
+  display: inline-block;
+}
+
+.kv_reserve {
+  font-size: 40px;
+  color: #604C3F;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 23px;
+  border: 1px solid #604C3F;
+  font-weight: 700;
+  margin: 0 auto 75px;
+}
+
+.kv_building {
+  width: 200px;
+  margin: 0 auto 13vw;
 }
 
 @media screen and (max-width: 991px) {
-  .main {
-    padding-top: 55px;
+  .kv {
+    padding-top: 20px;
+  }
+  .kv_smalllogo {
+    width: 80px;
+  }
+  .kv_biglogo {
+    width: 200px;
+  }
+  .kv_title-top {
+    font-size: 50px;
+  }
+  .kv_title-bottom {
+    font-size: 42px;
+  }
+  .kv_reserve {
+    font-size: 24px;
+  }
+  .kv_building {
+    width: 70px;
   }
 }
 
@@ -234,6 +323,10 @@ img {
   .remark {
     font-size: 3px;
   }
+}
+
+.map {
+  padding: 8vw 0;
 }
 
 .video {
@@ -1038,10 +1131,7 @@ img {
 }
 
 .value {
-  padding-top: 260px;
   padding-bottom: 140px;
-  background-image: url(../img/bg-green.webp);
-  background-size: 100%;
   text-align: center;
   color: #604C3F;
 }
@@ -1661,8 +1751,6 @@ img {
 }
 
 .practical_bottom {
-  background-image: url(../img/bg-pattern.webp);
-  background-size: 100%;
   padding-top: calc(1300px * 0.31);
 }
 
@@ -2063,8 +2151,6 @@ img {
 }
 
 .bright {
-  background-image: url(../img/bg-green.webp);
-  background-size: 100%;
   text-align: center;
   color: #604C3F;
   padding-bottom: 200px;
