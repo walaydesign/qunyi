@@ -65,8 +65,7 @@ $(window).on("resize scroll",function(){
 function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        // To : "dition1118@gmail.com, zhulixdesign@gmail.com, zhuliservice@gmail.com",
-        To : "yl301114@gmail.com",
+        To : "zhulixdesign@gmail.com, zhuliservice@gmail.com, pinruei@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "群邑璟美預約賞屋",
         Body : "姓名:" + document.getElementById("name").value
