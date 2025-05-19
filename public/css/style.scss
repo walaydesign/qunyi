@@ -8,10 +8,18 @@ $secondary: #604C3F;
 body {
     background-color: #fff;
     font-family: "Noto Serif TC", serif;
-    background-image: url(../img/bg-gradient.webp);
-    background-size: 100%;
-    background-position: center 0;
-    background-repeat: no-repeat;
+    &.v-build {
+        background-image: url(../img/bg-gradient.webp);
+        background-size: 100%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        .main {
+            padding-top: 150px;
+            @media screen and (max-width: 991px) {
+                padding-top: 55px;
+            }
+        }
+    }
 }
 
 ul {
@@ -188,12 +196,6 @@ img {
     }
 }
 
-// .main {
-//     padding-top: 150px;
-//     @media screen and (max-width: 991px) {
-//         padding-top: 55px;
-//     }
-// }
 
 .bg-green {
     background-image: url(../img/bg-green.webp);

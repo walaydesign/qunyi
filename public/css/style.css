@@ -2,10 +2,23 @@
 body {
   background-color: #fff;
   font-family: "Noto Serif TC", serif;
+}
+
+body.v-build {
   background-image: url(../img/bg-gradient.webp);
   background-size: 100%;
   background-position: center 0;
   background-repeat: no-repeat;
+}
+
+body.v-build .main {
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 991px) {
+  body.v-build .main {
+    padding-top: 55px;
+  }
 }
 
 ul {
