@@ -54,6 +54,11 @@ $(".btn-contact").click(function(){
     $("html, body").animate({ scrollTop: top }, parseInt(300));
 })
 
+$(".kv_reserve").click(function(){
+    var top = $("#contact_form").offset().top;
+    $("html, body").animate({ scrollTop: top }, parseInt(500));
+})
+
 $(window).on("resize scroll",function(){
     if($(window).scrollTop()>0){
         $(".header").addClass("scrolldown");

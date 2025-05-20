@@ -250,6 +250,12 @@ img {
         border: 1px solid $secondary;
         font-weight: 700;
         margin: 0 auto 75px;
+        display: block;
+        transition: $transition;
+        &:hover {
+            background-color: $secondary;
+            color: #fff;
+        }
     }
     &_building {
         width: 200px;

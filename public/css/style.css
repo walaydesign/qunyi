@@ -293,6 +293,14 @@ img {
   border: 1px solid #604C3F;
   font-weight: 700;
   margin: 0 auto 75px;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.kv_reserve:hover {
+  background-color: #604C3F;
+  color: #fff;
 }
 
 .kv_building {

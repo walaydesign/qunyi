@@ -30,7 +30,7 @@
                             24-35坪<span class="kv_title-dot"></span>質感宅
                         </span>
                     </h1>
-                    <div class="kv_reserve">即刻預約</div>
+                    <button class="kv_reserve header_item" data-target="#contact">即刻預約</button>
                     <img src="./public/img/logo-2.png" alt="" class="kv_building">
                 </div>
             </div>
@@ -76,7 +76,10 @@
             </div>
         </div>
 
-        <img class="w-100" src="./public/img/map.webp" alt="">
+        <div class="scene">
+            <img class="w-100" src="./public/img/map.webp" alt="">
+            <p class="remark">鳥瞰合成示意圖</p>
+        </div>
 
         <div class="map">
             <div class="container">
@@ -499,10 +502,6 @@
         </div> -->
 
 
-        <div class="scene">
-            <img class="w-100" src="./public/img/map.webp" alt="">
-            <p class="remark">鳥瞰合成示意圖</p>
-        </div>
 
 
         <div class="practical">
@@ -736,7 +735,7 @@
                 </ul>
                 <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">基地：八德 建德路廣興三路口</h3>
             </div>
-            <form class="contact_form" onsubmit="sendEmail(); reset(); return false">
+            <form class="contact_form" id="contact_form" onsubmit="sendEmail(); reset(); return false">
                 <h2>與我們聯繫</h2>
                 <div>
                     <input type="text" placeholder="姓名" id="name" required>
