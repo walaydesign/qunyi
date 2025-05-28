@@ -16,15 +16,34 @@
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./public/css/aos/aos.css">
     <link rel="stylesheet" href="./public/css/style.css?v=3">
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17104371508"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17104371508'); </script>
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17104371508"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17104371508"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-17104371508');
+</script> -->
+<!-- Event snippet for 網頁瀏覽 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17104371508/6gAaCMCz4MsaELT-_9s_',
+          'value': 1.0,
+          'currency': 'TWD',
+          'event_callback': callback
+      });
+      return false;
+    }
 </script>
 <body>
     <main class="main">
@@ -39,7 +58,7 @@
                             24-35坪<span class="kv_title-dot"></span>質感宅
                         </span>
                     </h1>
-                    <button class="kv_reserve header_item" data-target="#contact">即刻預約</button>
+                    <button class="kv_reserve header_item" data-target="#contact" onclick="gtag_report_conversion(url)">即刻預約</button>
                     <img src="./public/img/logo-2.png" alt="" class="kv_building">
                 </div>
             </div>
@@ -759,8 +778,8 @@
                     WE WILL SERVE YOU WHOKEI <span class="line"></span> HEARTEDLY
                 </h4>
                 <div class="contact_form_btn">
-                    <button class="btn-clear">清除</button>
-                    <button id="submit" type="submit">送出</button>
+                    <button class="btn-clear" onclick="gtag_report_conversion(url)">清除</button>
+                    <button id="submit" type="submit" onclick="gtag_report_conversion(url)">送出</button>
                 </div>
 
             </form>
@@ -771,25 +790,25 @@
     <div class="sideBtn">
         <ul class="d-xl-block d-flex">
             <li>
-                <a href="tel:03-3125858" target="_blank">
+                <a href="tel:03-3125858" target="_blank" onclick="gtag_report_conversion(url)">
                     <img src="./public/img/phone.svg">
                     <span>立即來電</span>
                 </a>
             </li>
             <li>
-                <a href=" https://facebook.com/CYJingHer" target="_blank">
+                <a href=" https://facebook.com/CYJingHer" target="_blank" onclick="gtag_report_conversion(url)">
                     <img src="./public/img/fb.svg" alt="">
                     <span>FB粉專</span>
                 </a>
             </li>
             <li>
-                <a href="https://maps.app.goo.gl/WseqvA3N61jWA1QS7" target="_blank">
+                <a href="https://maps.app.goo.gl/WseqvA3N61jWA1QS7" target="_blank" onclick="gtag_report_conversion(url)">
                     <img src="./public/img/place.svg" alt="">
                     <span>地圖導航</span>
                 </a>
             </li>
             <li>
-                <a class="btn-contact">
+                <a class="btn-contact" onclick="gtag_report_conversion(url)">
                     <img src="./public/img/reserve.svg" alt="">
                     <span>立即預約</span>
                 </a>
