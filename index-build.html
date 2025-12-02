@@ -726,13 +726,13 @@
                 </ul>
                 <h3 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">基地：八德 建德路廣興三路口</h3>
             </div>
-            <form class="contact_form" onsubmit="sendEmail(); reset(); return false">
+            <form class="contact_form" id="contact-form">
                 <h2>與我們聯繫</h2>
                 <div>
-                    <input type="text" placeholder="姓名" id="name" required>
-                    <input type="text" placeholder="性別" id="gender" required>
-                    <input type="number" placeholder="手機" id="phone" required>
-                    <input type="text" placeholder="方便聯絡時間" id="time" required>
+                    <input type="text" placeholder="姓名" id="name" name="name" required>
+                    <input type="text" placeholder="性別" id="gender" name="gender" required>
+                    <input type="number" placeholder="手機" id="phone" name="phone" required>
+                    <input type="text" placeholder="方便聯絡時間" id="time" name="time" required>
                 </div>
                 <p class="contact_text">
                     請填寫這份表單，我們的代表將盡快透過電子郵件/電話與您聯繫！
@@ -783,7 +783,28 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js?v=20240527"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="./public/js/index.js?v=3"></script>
+    <script>
+      (function () {
+        emailjs.init("3j4kNvskrhLw3SIso");
+      })();
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          emailjs.sendForm("service_eyyx1dp", "template_z9yw6cp", this).then(
+            () => {
+              alert("感謝您的來信！我們很快就會和您聯繫！");
+              this.reset();
+            },
+            (error) => {
+              alert("寄送失敗，請稍後再試");
+            }
+          );
+        });
+    </script>
 </body>
 </html>
